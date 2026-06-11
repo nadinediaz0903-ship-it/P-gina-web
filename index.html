@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nadine Díaz, Barrera Montalvo, Fabian Flota - 3°P | página Web</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background:#f4f6f9;
+            color:#333;
+        }
+
+        /* MENÚ */
+        header{
+            background:#0d47a1;
+            position:fixed;
+            width:100%;
+            top:0;
+            z-index:1000;
+            box-shadow:0 2px 10px rgba(0,0,0,.2);
+        }
+
+        nav{
+            display:flex;
+            justify-content:center;
+            padding:15px;
+        }
+
+        nav ul{
+            display:flex;
+            list-style:none;
+            gap:25px;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            font-weight:bold;
+            transition:.3s;
+        }
+
+        nav a:hover{
+            color:#ffd54f;
+        }
+
+        section{
+            padding:100px 10% 60px;
+        }
+
+        h2{
+            text-align:center;
+            margin-bottom:30px;
+            color:#0d47a1;
+        }
+
+        /* PORTADA */
+        .portada{
+            min-height:100vh;
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
+            background:linear-gradient(rgba(13,71,161,.8),
+            rgba(13,71,161,.8)),
+            url("https://images.unsplash.com/photo-1496171367470-9ed9a91ea931");
+            background-size:cover;
+            color:white;
+        }
+
+        .portada h1{
+            font-size:4rem;
+            margin-bottom:20px;
+        }
+
+        .portada p{
+            font-size:1.2rem;
+            margin:10px;
+        }
+
+        /* TARJETAS */
+        .contenedor-cards{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+            gap:25px;
+        }
+
+        .card{
+            background:white;
+            border-radius:15px;
+            overflow:hidden;
+            box-shadow:0 5px 15px rgba(0,0,0,.15);
+            transition:.4s;
+        }
+
+        .card:hover{
+            transform:translateY(-10px);
+        }
+
+        .card img{
+            width:100%;
+            height:220px;
+            object-fit:cover;
+        }
+
+        .card-content{
+            padding:20px;
+        }
+
+        .card h3{
+            margin-bottom:10px;
+            color:#0d47a1;
+        }
+
+        /* BOTONES */
+        .btn{
+            display:inline-block;
+            margin-top:15px;
+            padding:12px 25px;
+            background:#0d47a1;
+            color:white;
+            text-decoration:none;
+            border-radius:8px;
+            transition:.3s;
+        }
+
+        .btn:hover{
+            background:#1565c0;
+        }
+
+        /* FORMULARIO */
+        iframe{
+            width:100%;
+            height:700px;
+            border:none;
+            border-radius:10px;
+            box-shadow:0 5px 15px rgba(0,0,0,.2);
+        }
+
+        /* PDF */
+        .pdf-container{
+            text-align:center;
+        }
+
+        .pdf-container embed{
+            width:100%;
+            height:700px;
+            border-radius:10px;
+        }
+
+        footer{
+            background:#0d47a1;
+            color:white;
+            text-align:center;
+            padding:20px;
+        }
+
+        @media(max-width:768px){
+
+            nav ul{
+                flex-wrap:wrap;
+                justify-content:center;
+            }
+
+            .portada h1{
+                font-size:2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- MENÚ -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos Visuales</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#formulario">Formulario</a></li>
+                <li><a href="#pdf">PDF 3P</a></li>
+                <li><a href="#github">GitHub</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- PORTADA -->
+    <section class="portada" id="inicio">
+        <h1>PRODUCTOS VISUALES</h1>
+
+        <p><strong>Alumno:</strong>  Diaz Perez, Barrera Montalvo, Fabian Flota</p>
+        <p><strong>Grupo:</strong> 4AMDg</p>
+        <p><strong>Materia:</strong> Produce Elementos Digitales Para La Comunicacion Visual</p>
+
+        <a href="#productos" class="btn">Ver Proyecto</a>
+    </section>
+
+    <!-- PRODUCTOS VISUALES -->
+    <section id="productos">
+        <h2>Productos Visuales</h2>
+
+        <div class="contenedor-cards">
+
+            <div class="card">
+                <img src="imagenes/5.png" alt="Producto 1">
+                <div class="card-content">
+                    <h3>Producto Visual 1</h3>
+                    <p>
+                        Descripción del producto visual realizado
+                        durante el Proyecto 1.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="imagenes/2.png" alt="Producto 2">
+                <div class="card-content">
+                    <h3>Producto Visual 2</h3>
+                    <p>
+                        Descripción del producto visual realizado
+                        durante el Proyecto 2.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="imagenes/4.png
+                " alt="Producto 3">
+                <div class="card-content">
+                    <h3>Producto Visual 3</h3>
+                    <p>
+                        Agrega más trabajos realizados durante
+                        el semestre.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- DESCARGA DE PROYECTOS -->
+    <section id="proyectos">
+        <h2>Proyecto 1 y Proyecto 2</h2>
+
+        <div class="contenedor-cards">
+
+            <div class="card">
+                <img src="imagenes/1.png" alt="Proyecto 1">
+                <div class="card-content">
+                    <h3>Proyecto 1</h3>
+                    <p>Documento PDF del Proyecto 1.</p>
+
+                    <a href="Pdf/Proyecto1.pdf"
+                    download
+                    class="btn">
+                        Descargar PDF
+                    </a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="imagenes/6.png" alt="Proyecto 2">
+                <div class="card-content">
+                    <h3>Proyecto 2</h3>
+                    <p>Documento PDF del Proyecto 2.</p>
+
+                    <a href="Pdf/Proyecto2.pdf"
+                    download
+                    class="btn">
+                        Descargar PDF
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- GITHUB -->
+    <section id="github">
+        <h2>Publicación en GitHub Pages</h2>
+
+        <p style="text-align:center; max-width:800px; margin:auto;">
+            Esta página puede publicarse gratuitamente
+            mediante GitHub Pages. Sube los archivos al
+            repositorio de GitHub y activa la opción
+            Pages para obtener un enlace público.
+        </p>
+
+        <div style="text-align:center; margin-top:30px;">
+            <a href="https://github.com/"
+            target="_blank"
+            class="btn">
+                Ir a GitHub
+            </a>
+        </div>
+    </section>
+#contacto img:hover{
+    opacity: 0.85;
+}
+
+<section id="contacto">
+    <h2>Contacto</h2>
+
+    <div style="text-align:center;">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeCuf23oaIo9ZmFGPtxjKiZh_4nZDgRWJRHWjcgRRKkc5wzLw/viewform?usp=header" target="_blank">
+            <img src="imagenes/Contacto.jpg"
+                 alt="Contacto"
+                 style="max-width:300px; border-radius:12px; transition:0.3s;">
+        </a>
+    </div>
+</section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>
+            Proyecto 3P - Productos Visuales | 2026
+        </p>
+    </footer>
+
+</body>
+</html>
